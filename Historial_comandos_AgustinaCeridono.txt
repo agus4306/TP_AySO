@@ -1,0 +1,310 @@
+pwd
+ls
+man ls
+ls -l
+ls -a
+cd repogit/
+ls
+cd /
+ls
+etc/
+cd etc/
+cat sudoers
+cat passwd
+tac passwd
+ls -a
+ls -l
+cd vim/
+cat vim
+cd ..
+exit
+cat README 
+q
+vagrant halt
+pwd
+vagrant status
+vagrant ssh
+vagrant up
+vagran --help
+Vagrant --help
+vagrant status
+exit
+vagrant status
+cat << FIN
+linea 1
+linea 2
+linea 3
+linea 4
+FIN
+
+man bc
+bc <<< 1+2
+echo "hola mundo"
+cat << FIN > prueba.txt
+esto es una prueba 
+para crear un archivo de texto
+FIN
+
+tail -n2 prueba.txt
+/proc$ cat cpuinfo | grep -i core
+cat /proc/cpuinfo | grep -i core
+vim ejecutable.sh
+cat ejecutable.sh
+ls -l
+chmod +x ejecutable.sh
+./ejecutable.sh
+ls -l
+vim crearcarpeta.sh
+cat ejecutable.sh
+vim crearusuario.sh
+cat crearusuario.sh
+sudo passwd agustina
+sudo useradd -m -c "agustina ceridono" agustina
+ls /home/
+sudo usermod -s /bin/bash agustina
+cat /etc/passwd
+sudo passwd agustina
+su agustina
+vagrant halt
+exit
+vagrant status
+pwd
+ls
+ls -l
+ls -la
+cat << EOF
+linea 1
+linea 2
+soy muy bonita
+EOF
+
+cat << FIN > clase3.txt
+en la clase 3 vemos muchos comandos
+mi comando favorito es el "cat"
+FIN
+
+cat clase3.txt
+ls
+cat << FIN >> clase3.txt
+esta es una nueva linea
+FIN
+
+cat clase3.txt
+tail -n3 clase3.txt
+cat clase3.txt | head -n1
+mkdir clase3
+ls
+mv clase3.txt /clase3
+sudo mv clase3.txt /clase3
+cd clase3/
+/clase3$ ls
+/clase3 ls
+sudo /clase3 ls
+ls
+sudo mv clase3.txt /clase3
+q
+ssh-keygen
+cd
+pwd
+ls -la
+cd .ssh
+ls -la
+cat id_rsa.pub
+cd
+sudo apt install git
+git --version
+ssh-keygen
+cat $HOME/.ssh/*.pub
+ssh-keygen
+cat $HOME/.shh/*.pub
+cd
+cd .ssh
+ls -la
+cat id_rsa.pub
+cd
+mkdir repogit
+ls -la
+cd repogit
+pwd
+git clone [200~git@github.com:agus4306/TP_AySO.git~
+git clone git@github.com:agus4306/TP_AySO.git
+cd TP_AySO
+ls
+cd
+cd TP_AySO
+mv ../script_dir.sh .
+ls
+cd TP_AySO
+git clone git@github.com:agus4306/TP_AySO.git
+cd repogit
+cd TP_AySO
+pwd
+ls -la
+n
+vagrant halt
+exict
+cd
+vagrant halt
+exit
+vagrant status
+pwd
+ssh-keygen
+rm ~/.ssh/id_rsa ~/.ssh/id_rsa.pub
+ssh-keygen
+cd
+pwd
+ls -la
+cd .ssh
+ls -la
+cat id_rsa.pub
+cd
+sudo apt install git
+git --version
+git clone git@github.com:agus4306/TP_AySO.git
+cd TP_AySO
+ls
+ls -la
+git status
+cd ~
+rm -rf TP_AySO
+git clone git@github.com:agus4306/TP_AySO.git
+cd TP_AySO
+ls -la
+git status
+git add README
+git commit -m "Primer archivo"
+git add README.md
+git status
+git config --global user.name "agustina"
+git config --global user.email "cagustinae@gmail.com"
+git commit -m "primer archivo"
+git push origin main
+git add .
+git commit -m "primer archivo"
+git push origin main
+cd repogit
+cd
+cd repogit
+git clone git@github.com:agus4306/TP_AySO.git
+cd TP_AySO/
+pwd
+ls -l
+cd
+cp README TP_AySO/
+cd TP_AySO/
+ls -la
+git status
+git add README.md
+ls -la
+git status
+git add README
+git commit -m "primer archivo"
+git push origin main
+exit
+cd TP_AySO/
+cat /etc/paswwd
+cd
+cat /etc/passwd
+man grep
+grep UBUNTU /etc/passwd
+grep ubuntu /etc/passwd
+grep -i Ubuntu /etc/passwd
+man awk
+cat << EOF > datos_usuario.txt
+EOF
+
+grep -i ubuntu /etc/passwd T
+grep -i ubuntu /etc/passwd | awk -F ':' '{print$2}' > datos_usuario.txt
+cat datos_usuario.txt 
+whoami
+echo "Usuario=$(whoami)" >> datos_usuario.txt
+cat datos_usuario.txt 
+git add .
+ls -la
+pwd
+cd TP_AySO/
+git add .
+git congif --global user.email cagustinae@gmail.com
+git config --global user.email "cagustinae@gmail.com"
+git config --global user.name "agus4306"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git status
+ls
+mv /datos_usuario.txt /TP_Ayso/
+cd
+ls -la
+mv datos_usuario.txt TP_AySO/ 
+cd TP_AySO/
+ls
+git add .
+git config --global user.email "cagustinae@gmail.com"
+git config --global user.name "Agus4306"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git status
+cat << EOF > info_pc.txt
+EOF
+
+grep -i "model name" /proc/cpuinfo
+grep -i "model name" /proc/cpuinfo | head -n1 | >> info_pc.txt
+cat info_pc.txt 
+ls
+grep -i "model name" /proc/cpuinfo | head -n1 >> info_pc.txt
+cat info_pc.txt 
+git add .
+git commit -m "feat: Añadiendo informacion del CPU"
+cat << EOF > lista_ordenada
+EOF
+
+man grep
+grep -v "nologin" /etc/passwd
+man sort
+cat lista_ordenada
+git add .
+git commit -m "ADD: Listado de usuarios ordenado"
+git status
+cat << EOF >> README.md
+Alumno: Agustina
+Division: 115
+Turno: mañana
+EOF
+
+cat README.md
+git add .
+git commit -m "docs: info del alumno"
+cd
+sudo snap install tree
+mkdir -p TP1/{arquitectura/Clase{1..5},so/Clase{1..6}
+tree TP1/
+rm -r TP1/
+mkdir -p TP1/{arquitectura/Clase{1..5},so/Clase{1..6}}
+tree TP1/
+mkdir repogit
+mv TP_AySO repogit/
+cd repogit/TP_AySO
+ls
+ls -la
+cd TP_AySO/
+csd
+cd
+cd /TP_AySO
+cd TP_AySO
+git push
+mv /TP_AySO/repogit
+cd
+mv TP_AySO repogit/
+rm -rf ~/repogit/TP_AySO
+cd /repogit/TP_AySO
+mv TP_AySO repogit/
+cd repogit/TP_AySO
+ls -l
+cat << EOF > script_dir.sh
+ mkdir -p TP1/{arquitectura/Clase{1..5},so/Clase{1..6}}
+EOF
+
+cat script_dir.sh
+chmod 777 script_dir.sh
+git add .
+git commit -m "ADD: añadiendo script"
+git push
+history -a
+history
